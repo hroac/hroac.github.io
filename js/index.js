@@ -600,7 +600,7 @@ async function save(state) {
 }
 
 function getUniqueId(guid) {
-    let uniqueId = localStorage.getItem('guid');
+    let uniqueId = localStorage.getItem(guid);
 
     if (!uniqueId) {
         // If no unique identifier exists, generate one and store it in local storage
